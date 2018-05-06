@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Text;
 using IocPerformance.Benchmarks;
 using IocPerformance.Output;
 
@@ -46,11 +47,18 @@ namespace IocPerformance
                 }
                 catch (Exception ex)
                 {
+                    StringBuilder sb = new StringBuilder(" Container ")
+                        .Append(container.Name)
+                        .AppendLine(" failed:");
+                    var iex = ex;
+                    while (iex != null)
+                    {
+                        sb.Append(ex.GetType().Name).Append(": ").AppendLine(ex.Message);
+                        iex = ex.InnerException;
+                    }
+                    sb.AppendLine(ex.StackTrace);
                     Console.ForegroundColor = ConsoleColor.Red;
-                    Console.WriteLine(
-                        " Container '{0}' failed: {1}",
-                        container.Name,
-                        ex.Message);
+                    Console.WriteLine(sb.ToString());
                     Console.ResetColor();
                 }
                 finally
@@ -82,6 +90,8 @@ namespace IocPerformance
             output.Create(benchmarks, benchmarkResults);
 
             Console.WriteLine("Done");
+
+            Console.ReadKey();
         }
     }
 }

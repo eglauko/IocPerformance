@@ -6,3 +6,4 @@
 /IocPerformance/obj
 *.Cache
 _ReSharper*
+/packages

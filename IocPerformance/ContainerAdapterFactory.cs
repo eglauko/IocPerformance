@@ -30,7 +30,18 @@ namespace IocPerformance
                     string.Join(", ", duplicateNames)));
             }
 
-            foreach (var container in containers)
+            var selected = containers.Where(c =>
+            {
+                //return c.Name == "Grace" || c.Name == "Microsoft Extensions DependencyInjection"
+                //    || c.Name == "LightInject" || c.Name == "Unity" || c.Name == "Valles";
+
+                //return c.Name == "Grace" || c.Name == "Microsoft Extensions DependencyInjection"
+                //    c.Name == "Valles";
+
+                return c.Name == "Valles";
+            });
+
+            foreach (var container in selected)
             {
                 yield return container;
             }
