@@ -16,15 +16,18 @@ Results
 ### Basic Features
 |**Container**|**Singleton**|**Transient**|**Combined**|**Complex**|
 |:------------|------------:|------------:|-----------:|----------:|
-|**No**|134<br/>226|156<br/>187|152<br/>186|215<br/>215|
+|**No**|57<br/>121|65<br/>137|80<br/>142|87<br/>115|
+|**[Valles 1.0-preview2](https://happycenter.visualstudio.com/Vaalles.Inject)**|**98**<br/>**181**|**128**<br/>**176**|**223**<br/>**200**|**520**<br/>**432**|
 ### Advanced Features
 |**Container**|**Property**|**Generics**|**IEnumerable**|**Conditional**|**Child Container**|**Asp Net Core**|**Interception With Proxy**|
 |:------------|-----------:|-----------:|--------------:|--------------:|------------------:|---------------:|--------------------------:|
-|**No**|214<br/>228|130<br/>164|397<br/>320|128<br/>187|761<br/>556|<br/>|89<br/>157|
+|**No**|112<br/>168|74<br/>110|176<br/>180|71<br/>146|614<br/>496|<br/>|67<br/>138|
+|**[Valles 1.0-preview2](https://happycenter.visualstudio.com/Vaalles.Inject)**|<br/>|**188**<br/>**269**|**1445**<br/>**900**|<br/>|<br/>|**2188**<br/>**1445**|<br/>|
 ### Prepare
 |**Container**|**Prepare And Register**|**Prepare And Register And Simple Resolve**|
 |:------------|-----------------------:|------------------------------------------:|
-|**No**|3<br/>|4<br/>|
+|**No**|2<br/>|3<br/>|
+|**[Valles 1.0-preview2](https://happycenter.visualstudio.com/Vaalles.Inject)**|**65**<br/>|**693**<br/>|
 ### Charts
 ![Basic features](http://www.palmmedia.de/content/blogimages/5225c515-2f25-498f-84fe-6c6e931d2042.png)
 ![Advanced features](http://www.palmmedia.de/content/blogimages/e0401485-20c6-462e-b5d4-c9cf854e6bee.png)

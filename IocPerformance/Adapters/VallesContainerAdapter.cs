@@ -20,7 +20,7 @@ namespace IocPerformance.Adapters
 
         public override string PackageName => "Valles.Inject";
 
-        public override string Version => "1.0-preview1";
+        public override string Version => "1.0-preview2";
 
         public override string Name => "Valles";
 
@@ -39,7 +39,7 @@ namespace IocPerformance.Adapters
         public override void Dispose()
         {
             // Allow the container and everything it references to be garbage collected.
-            injector?.Resolve<Valles.Inject.Core.IScope>().Dispose();
+            //injector?.Resolve<Valles.Inject.Core.IScope>().Dispose();
         }
 
         public override void Prepare()
@@ -118,8 +118,8 @@ namespace IocPerformance.Adapters
 
         private void RegisterOpenGeneric()
         {
-            this.container.AddWrapper(typeof(IGenericInterface<>), typeof(GenericExport<>), Valles.Inject.Core.LifetimeScope.Transient);
-            this.container.AddWrapper(typeof(ImportGeneric<>), typeof(ImportGeneric<>), Valles.Inject.Core.LifetimeScope.Transient);
+            this.container.AddTransient(typeof(IGenericInterface<>), typeof(GenericExport<>));
+            this.container.AddTransient(typeof(ImportGeneric<>), typeof(ImportGeneric<>));
         }
 
         private void RegisterMultiple()

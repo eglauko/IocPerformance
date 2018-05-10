@@ -400,11 +400,11 @@
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\Vaalles.Inject\Valles.Inject\NetFramework\Valles.Inject.AspNetCore.Net47\Valles.Inject.AspNetCore.Net47.csproj">
+    <ProjectReference Include="..\..\Vaalles.Inject\NetFramework\Valles.Inject.AspNetCore.Net47\Valles.Inject.AspNetCore.Net47.csproj">
       <Project>{1a94b239-f8ec-45b3-852b-c1aabf849d14}</Project>
       <Name>Valles.Inject.AspNetCore.Net47</Name>
     </ProjectReference>
-    <ProjectReference Include="..\..\Vaalles.Inject\Valles.Inject\NetFramework\Valles.Inject.Net47\Valles.Inject.Net47.csproj">
+    <ProjectReference Include="..\..\Vaalles.Inject\NetFramework\Valles.Inject.Net47\Valles.Inject.Net47.csproj">
       <Project>{044329c4-9b62-46da-8eaa-bcfa068e773f}</Project>
       <Name>Valles.Inject.Net47</Name>
     </ProjectReference>

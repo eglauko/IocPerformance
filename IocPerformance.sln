@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.26730.12
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IocPerformance", "IocPerformance\IocPerformance.csproj", "{C2CB4D53-6B69-4554-9DA6-759A69C528C9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valles.Inject.Net47", "..\Vaalles.Inject\Valles.Inject\NetFramework\Valles.Inject.Net47\Valles.Inject.Net47.csproj", "{044329C4-9B62-46DA-8EAA-BCFA068E773F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valles.Inject.Net47", "..\Vaalles.Inject\NetFramework\Valles.Inject.Net47\Valles.Inject.Net47.csproj", "{044329C4-9B62-46DA-8EAA-BCFA068E773F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valles.Inject.AspNetCore.Net47", "..\Vaalles.Inject\Valles.Inject\NetFramework\Valles.Inject.AspNetCore.Net47\Valles.Inject.AspNetCore.Net47.csproj", "{1A94B239-F8EC-45B3-852B-C1AABF849D14}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Valles.Inject.AspNetCore.Net47", "..\Vaalles.Inject\NetFramework\Valles.Inject.AspNetCore.Net47\Valles.Inject.AspNetCore.Net47.csproj", "{1A94B239-F8EC-45B3-852B-C1AABF849D14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
